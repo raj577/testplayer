@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.time-select,
+.sound-picker,
+.player-container {
+  position: relative;
+  height: 80%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.player-container {
+  position: relative;
+}
+
+.player-container svg {
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+video {
+  /* display: none; */
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: -1;
+}
+
+.time-display {
+  /* display: none; */
+  position: absolute;
+  bottom: 15%;
+  color: #3c40c6;
+  font-size: 50px;
+}
+
+.heading {
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 2%;
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 35px;
+  color: #bb2cd9;
+}
+
+.time-select button,
+.sound-picker button {
+  color: #2475b0;
+  width: 30%;
+  height: 10%;
+  background: none;
+  border: 5px solid #4bcffa;
+  cursor: pointer;
+  border-radius: 100px;
+  font-size: 20px;
+}
+
+/* .time-select button:hover {
+  color: black;
+} */
+
+.sound-picker button {
+  border: none;
+  height: 120px;
+  width: 120px;
+  border-radius: 10%;
+  padding: 30px;
+}
+
+.sound-picker button:nth-child(1) {
+  background: #4972a1;
+}
+
+.sound-picker button:nth-child(2) {
+  background: #a14f49;
+}
+
+.sound-picker button img {
+  height: 100%;
+}
+
+.time-select button:nth-child(1) {
+  color: #2475b0;
+  border: 5px solid #4bcffa;
+}
+
+.time-select button:nth-child(2) {
+  color: #2ecc72;
+  border: 5px solid #6ab04a;
+}
+
+.time-select button:nth-child(3) {
+  color: #eec213;
+  border: 5px solid #fac42f;
+}
+
+.time-select button:nth-child(4) {
+  color: #7b8788;
+  border: 5px solid #535c68;
+}
+
+.time-select button:nth-child(5) {
+  color: #30336b;
+  border: 5px solid #3498db;
+}
+
+.time-select button:nth-child(6) {
+  color: #f44336;
+  border: 5px solid #ff5722;
+}
+
+.time-select button:nth-child(1):hover {
+  color: black;
+  background: #4bcffa;
+}
+
+.time-select button:nth-child(2):hover {
+  color: black;
+  background: #6ab04a;
+}
+
+.time-select button:nth-child(3):hover {
+  color: black;
+  background: #fac42f;
+}
+
+.time-select button:nth-child(4):hover {
+  color: black;
+  background: #7f8fa6;
+}
+
+.time-select button:nth-child(5):hover {
+  color: black;
+  background: #3498db;
+}
+
+.time-select button:nth-child(6):hover {
+  color: black;
+  background: #ff5722;
+}
